@@ -7,3 +7,4 @@ markdown-it-py
 # tests only
 pytest
 pypdf
+beautifulsoup4
