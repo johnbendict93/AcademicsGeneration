@@ -1,0 +1,599 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:a7ab2ea220+sq:7117414ada+sv:d1c53640d2",
+ "calls": 15,
+ "needs_review": [
+  "Minimum Edit Distance"
+ ],
+ "failed": [],
+ "topics": [
+  {
+   "topic": "Origins and challenges of NLP",
+   "status": "gap",
+   "writer": null,
+   "verify": null
+  },
+  {
+   "topic": "Language Modeling: Grammar-based LM, Statistical LM",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "POS"
+    ],
+    "odd_chars": [],
+    "dropped": []
+   },
+   "verify": {
+    "status": "ok",
+    "total": 10,
+    "removed": [],
+    "error": "",
+    "verdicts": [
+     {
+      "id": "S1",
+      "sentence": "Grammar‑based language models rely on explicit rules that capture local syntactic constraints, such as “a determiner is always followed by an adjective or a noun” and “certain word categories never appear consecutively.” These rules are derived from observations of the language and are encoded as if‑then‑else patterns that can be applied to a given sentence to check whether the word sequence conforms to the expected grammar.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S2",
+      "sentence": "In a rule‑based solution for tasks like part‑of‑speech (POS) disambiguation, one first identifies the ambiguous words and then determines a discriminating contextual cue (e.g., the presence of a preceding determiner) that can decide the correct tag.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S3",
+      "sentence": "The rule is applied to new sentences by checking whether the relevant context appears, and the appropriate tag is assigned accordingly.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S4",
+      "sentence": "Statistical language models are built from a tagged training corpus that contains each word together with its true POS label.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S5",
+      "sentence": "From this data the model learns the most probable tag for each word and, more importantly, the probabilities of tag sequences given the surrounding context.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S6",
+      "sentence": "A simple statistical approach is the Transformation‑Based Learning (TBL) tagger.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S7",
+      "sentence": "Starting with the most likely tag for each word (derived from the training data), TBL learns transformation rules that modify these initial tags when specific contextual conditions are met.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S8",
+      "sentence": "The rules themselves are extracted automatically from the corpus, allowing the model to capture probabilistic tendencies in the data.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S9",
+      "sentence": "More advanced probabilistic models estimate the likelihood of an entire tag sequence for a sentence, selecting the sequence with the highest overall probability.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S10",
+      "sentence": "These models treat POS tagging as a sequence‑labeling problem and use the training corpus to compute the required probabilities.",
+      "supported": true,
+      "reason": ""
+     }
+    ]
+   }
+  },
+  {
+   "topic": "Regular Expressions",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "dropped": []
+   },
+   "verify": {
+    "status": "ok",
+    "total": 11,
+    "removed": [],
+    "error": "",
+    "verdicts": [
+     {
+      "id": "S1",
+      "sentence": "Regular expressions define **regular languages**.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S2",
+      "sentence": "Any regular expression can be converted into a finite state automaton (FSA) that recognises exactly the strings described by the expression.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S3",
+      "sentence": "An FSA is a directed graph whose nodes are called *states* and whose edges are labelled with symbols (or may be empty).",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S4",
+      "sentence": "One state is designated as the start state and one or more states are marked as accepting (final) states, often shown with double circles.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S5",
+      "sentence": "When a string is processed, the automaton begins at the start state, follows edges that match successive input symbols, and accepts the string if it reaches an accepting state after the last symbol.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S6",
+      "sentence": "If at any point there is no outgoing edge matching the next symbol, the string is rejected.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S7",
+      "sentence": "Thus an FSA serves as a **language recogniser**: it accepts all and only the strings belonging to the regular language specified by the original regular expression.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S8",
+      "sentence": "Finite state automata can be constructed for lexical items as well.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S9",
+      "sentence": "By creating paths for each word (e.g., “bag”, “boy”, “dog”) and linking them to common states for singular and plural forms, the automaton captures regular morphological patterns such as adding “s” for plurals.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S10",
+      "sentence": "While FSAs can tell whether a word belongs to the language, they do not provide morphological analysis such as extracting the lemma (e.g., deriving “boy” from “boys”).",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S11",
+      "sentence": "For that purpose, more powerful models like transducers are required.",
+      "supported": true,
+      "reason": ""
+     }
+    ]
+   }
+  },
+  {
+   "topic": "Finite-State Automata",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "dropped": []
+   },
+   "verify": {
+    "status": "ok",
+    "total": 15,
+    "removed": [],
+    "error": "",
+    "verdicts": [
+     {
+      "id": "S1",
+      "sentence": "A finite‑state automaton (FSA) is a directed graph whose nodes are called **states** and whose arcs are **edges** labeled with symbols (or possibly empty).",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S2",
+      "sentence": "One or more states are designated as **start states** and one or more as **accepting (final) states**, often shown with a double circle.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S3",
+      "sentence": "When an input string is processed, the automaton begins at a start state and follows edges that match the successive input symbols.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S4",
+      "sentence": "If the traversal ends in an accepting state, the string is **accepted**; otherwise it is rejected.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S5",
+      "sentence": "For example, the word “color” follows a path from the start state through states 0→1→2→…→6 and is accepted, while a non‑matching string such as “colr” cannot complete a path and is rejected.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S6",
+      "sentence": "FSAs recognize **regular languages**, i.e., the languages describable by regular expressions; any regular expression can be converted into an equivalent automaton.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S7",
+      "sentence": "The recognition problem for a deterministic FSA can be solved in linear time with respect to the length of the input string, because each symbol causes a single state transition.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S8",
+      "sentence": "Non‑deterministic FSAs (NFAs) can be transformed into equivalent deterministic FSAs (DFAs) by a standard construction, so the linear‑time property holds in general.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S9",
+      "sentence": "In morphological analysis, FSAs model regular concatenation at morpheme boundaries.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S10",
+      "sentence": "A single state can represent a class of roots (e.g., all singular nouns), and a single edge labeled with a suffix such as **‑s** can capture the plural formation for all those nouns.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S11",
+      "sentence": "Irregular forms are handled by separate paths that bypass the regular plural edge, leading directly to an accepting state for the irregular plural (e.g., “goose” → “geese”).",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S12",
+      "sentence": "FSAs can also encode morpheme ordering (morphotactics).",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S13",
+      "sentence": "For adjectives, a prefix like **un‑** can be followed by a root (e.g., “happy”) and then by suffixes such as **‑er**, **‑est**, **‑ly**, generating words like “unhappy”, “happier”, “happily”, etc., through appropriate state transitions.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S14",
+      "sentence": "The elegance of FSAs lies in their simplicity and efficiency: they provide a linear‑time method for determining whether a word belongs to a predefined vocabulary and for extracting morphological information such as singular/plural status.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S15",
+      "sentence": "Tools such as the AT & FSM library and OpenFST implement these finite‑state methods for practical morphological analysis.",
+      "supported": true,
+      "reason": ""
+     }
+    ]
+   }
+  },
+  {
+   "topic": "English Morphology",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "dropped": []
+   },
+   "verify": {
+    "status": "ok",
+    "total": 18,
+    "removed": [],
+    "error": "",
+    "verdicts": [
+     {
+      "id": "S1",
+      "sentence": "Finite state automata can be built to recognise whether an English word is singular or plural.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S2",
+      "sentence": "Given a word, the automaton follows transitions for each character and accepts the word if it reaches an accepting state.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S3",
+      "sentence": "This recognition runs in linear time with respect to the length of the word.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S4",
+      "sentence": "A finite state automaton can also be used to generate English adjective forms.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S5",
+      "sentence": "For example, a prefix such as **un** can be combined with an adjective root like **happy** and then with suffixes **er**, **est**, **ly** to produce words such as *unhappy*, *happier*, *happiest*, *happily*.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S6",
+      "sentence": "The same structure can generate forms like *real* and *unreal* by attaching the prefix **un** to the root **real**.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S7",
+      "sentence": "Regular nouns follow a simple pattern that can be captured with a single edge labelled **s** for the plural morpheme.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S8",
+      "sentence": "All singular noun states converge to a common state, and the edge with **s** leads to the plural accepting state.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S9",
+      "sentence": "Irregular nouns such as **goose** → **geese** require a separate path because the regular **s** edge does not apply.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S10",
+      "sentence": "To handle spelling changes at morpheme boundaries, a two‑level morphology is introduced.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S11",
+      "sentence": "The first level maps a lexical form (e.g., *cat* + **noun** + **plural**) to an intermediate form that may contain a placeholder.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S12",
+      "sentence": "The second level applies context‑sensitive rules to convert the intermediate form to the surface form, taking into account the final characters of the stem and the initial characters of the affix.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S13",
+      "sentence": "These rules are expressed in a notation where a letter is changed to another letter when it is preceded and followed by specific characters.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S14",
+      "sentence": "Two main approaches are used in designing morphological analysers.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S15",
+      "sentence": "The engineering approach treats the stem (for example the consonant **k**) as the core and places all other material into the suffix, allowing spelling‑change rules to be handled within the same framework.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S16",
+      "sentence": "Toolkits such as AT‑FSM and OPENFST support this finite‑state method for morphological analysis.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S17",
+      "sentence": "Finite state recognisers alone cannot provide the lemma or root form of a word; they only tell whether a string belongs to the language.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S18",
+      "sentence": "For morphological analysis that requires mapping a surface form to its lemma, transducers—finite state devices that produce output strings—are needed.",
+      "supported": true,
+      "reason": ""
+     }
+    ]
+   }
+  },
+  {
+   "topic": "Transducers for lexicon and rules, Tokenization",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "FST"
+    ],
+    "odd_chars": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "- Tokenization is not detailed in the source material; therefore only minimal coverage is provided."
+     }
+    ]
+   },
+   "verify": {
+    "status": "ok",
+    "total": 9,
+    "removed": [],
+    "error": "",
+    "verdicts": [
+     {
+      "id": "S1",
+      "sentence": "In a linguistic‑based approach the stem is stored in the lexicon and affixes are also listed separately; surface‑level spelling changes are handled by explicit rules that describe how the underlying forms are realized on the surface.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S2",
+      "sentence": "In contrast, an engineering approach does not keep separate spelling‑change rules.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S3",
+      "sentence": "Instead it seeks the smallest possible stem unit and incorporates any irregular phonetic changes directly into the affix representations.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S4",
+      "sentence": "A finite‑state transducer (FST) extends a finite‑state automaton by labeling each transition with both an input symbol and an output symbol.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S5",
+      "sentence": "This allows the device to translate an input string into a different output string, for example converting the plural form “boys” to its lemma “boy”.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S6",
+      "sentence": "When the same lexicon is used for morphological analysis, the transducer’s edges carry the input character (e.g., the surface form) and the corresponding output character (e.g., the underlying lemma).",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S7",
+      "sentence": "Supplying the input “men” yields the output “men” as the lemma.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S8",
+      "sentence": "Handling irregular plural formation illustrates a typical challenge: the word “fox” becomes “foxes” by inserting an “e” before the suffix “s”.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S9",
+      "sentence": "Various strategies can be employed within the transducer to model such boundary changes.",
+      "supported": true,
+      "reason": ""
+     }
+    ]
+   }
+  },
+  {
+   "topic": "Detecting and Correcting Spelling Errors",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "1",
+     "2",
+     "3"
+    ],
+    "odd_chars": [],
+    "dropped": []
+   },
+   "verify": {
+    "status": "ok",
+    "total": 10,
+    "removed": [],
+    "error": "",
+    "verdicts": [
+     {
+      "id": "S1",
+      "sentence": "Spelling correction becomes necessary when the input text is noisy, i.e., it contains misspelled words that must be fixed before further analysis.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S2",
+      "sentence": "Two main scenarios are considered.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S3",
+      "sentence": "The first is **isolated word error correction**, where a single incorrect word is corrected without using any surrounding context.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S4",
+      "sentence": "In this setting the goal is to find the correct word that is “closest” to the misspelled form.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S5",
+      "sentence": "To decide closeness a **distance metric** is required.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S6",
+      "sentence": "The simplest and most widely used metric for this purpose is **edit distance**, which measures how many insertions, deletions or substitutions are needed to transform one word into another.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S7",
+      "sentence": "Words whose edit distance to the misspelled token is small are treated as candidate corrections; if the distance is too large the candidate is discarded.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S8",
+      "sentence": "For example, given the misspelled token “behaf” (missing the ‘l’), the algorithm would compute edit distances to possible dictionary words such as “behalf” and “behave”.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S9",
+      "sentence": "Since “behaf” and “behalf” have a very small edit distance, they are considered close and “behalf” would be selected as the correction.",
+      "supported": true,
+      "reason": ""
+     },
+     {
+      "id": "S10",
+      "sentence": "Thus, spelling correction for isolated words proceeds by (1) detecting a misspelled token, (2) computing edit distances to dictionary entries, and (3) choosing the word(s) with the minimum distance as the corrected form.",
+      "supported": true,
+      "reason": ""
+     }
+    ]
+   }
+  },
+  {
+   "topic": "Minimum Edit Distance",
+   "status": "needs_review",
+   "writer": {
+    "calls": 2,
+    "new_terms": [
+     "DP"
+    ],
+    "odd_chars": [
+     "U+00B7"
+    ],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "The dynamic‑programming recurrence uses previously computed cells:"
+     }
+    ]
+   },
+   "verify": null
+  }
+ ]
+}

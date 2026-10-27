@@ -1,0 +1,214 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:a711b2fe41+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 11,
+ "needs_review": [],
+ "failed": [],
+ "skipped_spots": [
+  "Garbled NPTEL transcript: says the transducer outputs lemma 'men' for input 'men' (lecture slide: 'man'). Printed as a wrong fact in runs #6, #9, #10, #11.",
+  "Garbled NPTEL transcript: 'Catherine cook k notation' is not a real name for the rewrite-rule notation. Printed as 'Catherine-Cook notation' in run #12."
+ ],
+ "topics": [
+  {
+   "topic": "Origins and challenges of NLP",
+   "status": "gap",
+   "writer": null,
+   "verify": null
+  },
+  {
+   "topic": "Language Modeling: Grammar-based LM, Statistical LM",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Regular Expressions",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "used_try": 2,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [
+      "U+2194"
+     ],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "*Key points*"
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Finite-State Automata",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [
+     "Key properties of FSAs:"
+    ],
+    "used_try": 2,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "stics make FSAs a practical tool for computational morphology, enabling efficient analysis and generation of word forms."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "English Morphology",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Two main approaches are used when designing morphological analysers:",
+      "end": "Two main approaches are used when designing morphological analysers:"
+     },
+     {
+      "reason": "no citation",
+      "text": "- **Linguistic approach** – the stem and affixes are listed in a lexicon and surface‑change rules are applied separately.",
+      "end": " **Linguistic approach** – the stem and affixes are listed in a lexicon and surface‑change rules are applied separately."
+     }
+    ],
+    "kept_leadins": [],
+    "used_try": 2,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [
+      "U+2205"
+     ],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Transducers for lexicon and rules, Tokenization",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Detecting and Correcting Spelling Errors",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "Levenshtein"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Minimum Edit Distance",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "The dynamic‑programming solution fills an n × m matrix of **D(i,j)** values. For each cell the minimum of three possible predecessor costs is taken:",
+      "end": "tion fills an n × m matrix of **D(i,j)** values. For each cell the minimum of three possible predecessor costs is taken:"
+     },
+     {
+      "reason": "no citation",
+      "text": "* **Deletion**: move from **D(i‑1,j)** and add 1",
+      "end": "* **Deletion**: move from **D(i‑1,j)** and add 1"
+     },
+     {
+      "reason": "no citation",
+      "text": "* **Insertion**: move from **D(i,j‑1)** and add 1",
+      "end": "* **Insertion**: move from **D(i,j‑1)** and add 1"
+     },
+     {
+      "reason": "no citation",
+      "text": "* **Substitution / match**: move from **D(i‑1,j‑1)** and add 0 if the characters match, otherwise add the substitution cost (1 or 2)",
+      "end": "tion / match**: move from **D(i‑1,j‑1)** and add 0 if the characters match, otherwise add the substitution cost (1 or 2)"
+     },
+     {
+      "reason": "no citation",
+      "text": "This dynamic‑programming method efficiently finds the minimum edit distance and, when needed, the corresponding alignment between two strings.",
+      "end": "ng method efficiently finds the minimum edit distance and, when needed, the corresponding alignment between two strings."
+     }
+    ],
+    "kept_leadins": [],
+    "used_try": 2,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [
+      "\\(",
+      "\\)",
+      "^{",
+      "\\times"
+     ],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "The dynamic‑programming recurrence computes \\(D(i,j)\\) from previously solved sub‑problems:"
+      },
+      {
+       "reason": "no citation",
+       "end": "- Inserting a character to match \\(Y_j\\) gives a cost of \\(D(i,j-1)+1\\) (analogous to the deletion case)."
+      }
+     ]
+    }
+   },
+   "verify": null
+  }
+ ]
+}

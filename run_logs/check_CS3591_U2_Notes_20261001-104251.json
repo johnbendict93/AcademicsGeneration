@@ -1,0 +1,168 @@
+{
+ "subject_code": "CS3591",
+ "unit": 2,
+ "variant": "Notes",
+ "source_sha256": "6ee10a76c586ba7c19a21e9cc04c517369135a24a3cd548cd6bad4e981882e9c",
+ "prompt_version": "sp:66e76a7ef2+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 7,
+ "needs_review": [],
+ "failed": [],
+ "skipped_spots": [],
+ "topics": [
+  {
+   "topic": "Transport-Layer Protocols: UDP",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "Datagram"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [],
+    "note": ""
+   },
+   "verify": null
+  },
+  {
+   "topic": "TCP: Connection Management",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [],
+    "note": "",
+    "used_try": 2,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "nues (RTO, 2 × RTO, 4 × RTO, …) until an acknowledgement arrives, at which point the RTO is reset to its original value."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Flow control",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [
+     "P29",
+     "P37"
+    ],
+    "note": ""
+   },
+   "verify": null
+  },
+  {
+   "topic": "Congestion Control",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [
+     "P56",
+     "P38"
+    ],
+    "note": "",
+    "used_try": 2,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [
+      "MSS"
+     ],
+     "odd_chars": [
+      "U+2190"
+     ],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Quality of Service",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "QoS",
+     "ATM"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [
+     "P53",
+     "P60"
+    ],
+    "note": ""
+   },
+   "verify": null
+  }
+ ]
+}

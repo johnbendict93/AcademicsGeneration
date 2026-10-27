@@ -1,0 +1,210 @@
+{
+ "subject_code": "CS3591",
+ "unit": 3,
+ "variant": "Notes",
+ "source_sha256": "2d06cbb405f4e92c5d4701bda120c0a422daf19d6549e24198d4ee503326734d",
+ "prompt_version": "sp:66e76a7ef2+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 9,
+ "needs_review": [
+  "IP Addressing",
+  "Subnetting"
+ ],
+ "failed": [],
+ "skipped_spots": [],
+ "topics": [
+  {
+   "topic": "Internet protocol",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "202.141",
+     "81.2"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [],
+    "note": ""
+   },
+   "verify": null
+  },
+  {
+   "topic": "IPV4",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [
+     "P49",
+     "P55"
+    ],
+    "note": ""
+   },
+   "verify": null
+  },
+  {
+   "topic": "IP Addressing",
+   "status": "needs_review",
+   "writer": {
+    "calls": 3,
+    "new_terms": [
+     "126.0",
+     "0.0",
+     "126.255",
+     "255.255",
+     "189.233"
+    ],
+    "odd_chars": [],
+    "latex": [
+     "\\(",
+     "^{",
+     "\\text",
+     "\\)"
+    ],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [],
+    "note": "",
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [
+      "\\(",
+      "^{",
+      "\\text",
+      "\\)"
+     ],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "2. Compute the total host combinations as \\(2^{\\text{host‑bits}}\\)."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Subnetting",
+   "status": "needs_review",
+   "writer": {
+    "calls": 3,
+    "new_terms": [
+     "192.168",
+     "0.0",
+     "128.0",
+     "255.255"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [
+     "1. Determine the number of subnets required.",
+     "2. Calculate the minimum number of bits needed so that the number of possible subnet identifiers exceeds the required subnets while excluding the all‑zero and all‑one patterns.",
+     "3. Borrow that number of bits from the host portion to form the subnet field.",
+     "4. Adjust the subnet mask to reflect the total number of network‑plus‑subnet bits (original network bits + borrowed bits).",
+     "5. Assign subnet identifiers using the available binary patterns, avoiding the all‑zero and all‑one values."
+    ],
+    "trimmed": [],
+    "note": "",
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [
+      "203.110",
+      "128.0",
+      "100",
+      "160.0",
+      "101",
+      "192.0",
+      "VLSM"
+     ],
+     "odd_chars": [
+      "U+1D47",
+      "U+2265"
+     ],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "obtain three subnets, three bits are borrowed from the host portion, giving a new prefix length of /19. The subnets are:"
+      },
+      {
+       "reason": "no citation",
+       "end": "Each subnet uses the remaining 13 host bits for host addressing."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "IPV6, ARP, RARP, ICMP, DHCP",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "ND",
+     "ICMPv"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [],
+    "note": ""
+   },
+   "verify": null
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "subject_code": "CS3591",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "4dde23b125d0a464e523a4b44c2def94c4a93a5be3f1d6b7864d57328bf83e9e",
+ "prompt_version": "sp:66e76a7ef2+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 3,
+ "needs_review": [],
+ "failed": [
+  "Network Types"
+ ],
+ "skipped_spots": [],
+ "topics": [
+  {
+   "topic": "Network Types",
+   "status": "failed",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [
+     "P2",
+     "P46"
+    ],
+    "note": "",
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  }
+ ]
+}

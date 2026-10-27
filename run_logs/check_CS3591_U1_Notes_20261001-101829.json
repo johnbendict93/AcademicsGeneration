@@ -1,0 +1,41 @@
+{
+ "subject_code": "CS3591",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "4dde23b125d0a464e523a4b44c2def94c4a93a5be3f1d6b7864d57328bf83e9e",
+ "prompt_version": "sp:66e76a7ef2+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 1,
+ "needs_review": [],
+ "failed": [],
+ "skipped_spots": [],
+ "topics": [
+  {
+   "topic": "Network Types",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "WANs"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "trimmed": [
+     "P2",
+     "P46"
+    ],
+    "note": ""
+   },
+   "verify": null
+  }
+ ]
+}

@@ -1,0 +1,201 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:70edd3f068+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 6,
+ "needs_review": [],
+ "failed": [],
+ "skipped_spots": [
+  "Garbled NPTEL transcript: says the transducer outputs lemma 'men' for input 'men' (lecture slide: 'man'). Printed as a wrong fact in runs #6, #9, #10, #11.",
+  "Garbled NPTEL transcript: 'Catherine cook k notation' is not a real name for the rewrite-rule notation. Printed as 'Catherine-Cook notation' in run #12."
+ ],
+ "topics": [
+  {
+   "topic": "English Morphology",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "used_try": 2,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [
+      "U+27E8",
+      "U+27E9"
+     ],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Detecting and Correcting Spelling Errors",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "used_try": 2,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "1. Take the misspelled word."
+      },
+      {
+       "reason": "no citation",
+       "end": "2. Compute the edit distance between this word and each candidate word in the dictionary."
+      },
+      {
+       "reason": "no citation",
+       "end": "3. Identify the word(s) with the smallest edit distance as the closest match."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Minimum Edit Distance",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "The problem is solved using dynamic programming. The value D(i,j) is computed from previously solved sub‑problems:",
+      "end": "The problem is solved using dynamic programming. The value D(i,j) is computed from previously solved sub‑problems:"
+     },
+     {
+      "reason": "no citation",
+      "text": "- Deleting the i‑th character of X gives a cost of D(i‑1,j) + 1.",
+      "end": "- Deleting the i‑th character of X gives a cost of D(i‑1,j) + 1."
+     },
+     {
+      "reason": "no citation",
+      "text": "- Inserting the j‑th character of Y gives a cost of D(i,j‑1) + 1.",
+      "end": "- Inserting the j‑th character of Y gives a cost of D(i,j‑1) + 1."
+     },
+     {
+      "reason": "no citation",
+      "text": "1. Initialise a matrix D of size (n + 1) × (m + 1).",
+      "end": "1. Initialise a matrix D of size (n + 1) × (m + 1)."
+     },
+     {
+      "reason": "no citation",
+      "text": "2. Set D(0,0) = 0; D(i,0) = i (deleting i characters) and D(0,j) = j (inserting j characters).",
+      "end": "2. Set D(0,0) = 0; D(i,0) = i (deleting i characters) and D(0,j) = j (inserting j characters)."
+     },
+     {
+      "reason": "no citation",
+      "text": "3. For each i from 1 to n and each j from 1 to m compute:",
+      "end": "3. For each i from 1 to n and each j from 1 to m compute:"
+     },
+     {
+      "reason": "no citation",
+      "text": "   - costDelete = D(i‑1,j) + 1",
+      "end": "   - costDelete = D(i‑1,j) + 1"
+     },
+     {
+      "reason": "no citation",
+      "text": "   - costInsert = D(i,j‑1) + 1",
+      "end": "   - costInsert = D(i,j‑1) + 1"
+     },
+     {
+      "reason": "no citation",
+      "text": "4. Set D(i,j) to the minimum of costDelete, costInsert, and costSubst.",
+      "end": "4. Set D(i,j) to the minimum of costDelete, costInsert, and costSubst."
+     }
+    ],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "used_try": 1,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "The problem is solved using dynamic programming. The value D(i,j) is computed from previously solved sub‑problems:"
+      },
+      {
+       "reason": "no citation",
+       "end": "- Deleting the i‑th character of X gives a cost of D(i‑1,j) + 1."
+      },
+      {
+       "reason": "no citation",
+       "end": "- Inserting the j‑th character of Y gives a cost of D(i,j‑1) + 1."
+      },
+      {
+       "reason": "no citation",
+       "end": "1. Initialise a matrix D of size (n + 1) × (m + 1)."
+      },
+      {
+       "reason": "no citation",
+       "end": "2. Set D(0,0) = 0; D(i,0) = i (deleting i characters) and D(0,j) = j (inserting j characters)."
+      },
+      {
+       "reason": "no citation",
+       "end": "3. For each i from 1 to n and each j from 1 to m compute:"
+      },
+      {
+       "reason": "no citation",
+       "end": "   - costDelete = D(i‑1,j) + 1"
+      },
+      {
+       "reason": "no citation",
+       "end": "   - costInsert = D(i,j‑1) + 1"
+      },
+      {
+       "reason": "no citation",
+       "end": "4. Set D(i,j) to the minimum of costDelete, costInsert, and costSubst."
+      }
+     ]
+    }
+   },
+   "verify": null
+  }
+ ]
+}

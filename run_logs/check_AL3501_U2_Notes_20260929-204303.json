@@ -1,0 +1,259 @@
+{
+ "subject_code": "AL3501",
+ "unit": 2,
+ "variant": "Notes",
+ "source_sha256": "31bf0c104f4be943590c0e291e04eb5e8d458f01fd561f11c8e423f91db27148",
+ "prompt_version": "sp:895212a2a3+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 10,
+ "needs_review": [
+  "Hidden Markov and Maximum Entropy models."
+ ],
+ "failed": [],
+ "skipped_spots": [],
+ "topics": [
+  {
+   "topic": "Word Classes",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 2,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "Word classes are divided into two major groups."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Part-of-Speech Tagging",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 2,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [
+      "POS",
+      "Penn",
+      "NNS"
+     ],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "Sentence: **“The grand jury commented on a number of other topics.”**\nTagging with the Penn Treebank scheme yields:"
+      },
+      {
+       "reason": "no citation",
+       "end": "- *The* – determiner (DT)"
+      },
+      {
+       "reason": "no citation",
+       "end": "- *grand* – adjective (JJ)"
+      },
+      {
+       "reason": "no citation",
+       "end": "- *jury* – noun (NN)"
+      },
+      {
+       "reason": "no citation",
+       "end": "- *commented* – verb (VBD)"
+      },
+      {
+       "reason": "no citation",
+       "end": "- *a* – determiner (DT)"
+      },
+      {
+       "reason": "no citation",
+       "end": "- *number* – noun (NN)"
+      },
+      {
+       "reason": "no citation",
+       "end": "- *other* – adjective (JJ)"
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Rule-based",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "POS"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [
+     "2. Compare these initial tags with the gold‑standard tags in the corpus.",
+     "4. Apply the learned rules iteratively to the training data, updating tags each time a rule fires."
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Stochastic and Transformation-based tagging",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "POS"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Issues in PoS tagging",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [
+     "The sentence pair illustrates the problem:"
+    ],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [
+     "1. “… is clearly **marked** …” (past participle)"
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Hidden Markov and Maximum Entropy models.",
+   "status": "needs_review",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [
+     "U+03BB",
+     "U+03A3"
+    ],
+    "latex": [
+     "_{"
+    ],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [
+      "MaxEnt"
+     ],
+     "odd_chars": [],
+     "latex": [
+      "\\(",
+      "\\)",
+      "\\lambda",
+      "\\sum",
+      "_{",
+      "\\exp",
+      "\\left",
+      "\\right"
+     ],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "\\[\np_{\\lambda}(y|x)=\\frac{\\exp\\left(\\sum_i \\lambda_i f_i(x,y)\\right)}{Z(x)}\n\\]"
+      },
+      {
+       "reason": "no citation",
+       "end": "Features that can be used in a MaxEnt POS tagger include:"
+      },
+      {
+       "reason": "no citation",
+       "end": "- Whether the current word is the first word of the sentence."
+      },
+      {
+       "reason": "no citation",
+       "end": "- Whether the next word is “to”."
+      },
+      {
+       "reason": "no citation",
+       "end": "- Whether any of the previous five words is a preposition."
+      }
+     ]
+    }
+   },
+   "verify": null
+  }
+ ]
+}

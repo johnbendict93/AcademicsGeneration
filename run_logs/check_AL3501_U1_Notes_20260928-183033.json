@@ -1,0 +1,389 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:b281cfdf74+sq:a3295f6988",
+ "calls": 11,
+ "needs_review": [],
+ "failed": [
+  "English Morphology",
+  "Transducers for lexicon and rules, Tokenization",
+  "Detecting and Correcting Spelling Errors"
+ ],
+ "topics": [
+  {
+   "topic": "Origins and challenges of NLP",
+   "status": "gap",
+   "writer": null,
+   "verify": null
+  },
+  {
+   "topic": "Language Modeling: Grammar-based LM, Statistical LM",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "POS"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Regular Expressions",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Finite-State Automata",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Overall, FSAs provide an elegant and computationally efficient mechanism for recognizing and generating linguistic structures that obey regular, concatenative p",
+      "end": "ally efficient mechanism for recognizing and generating linguistic structures that obey regular, concatenative patterns."
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "English Morphology",
+   "status": "failed",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Finite‑state automata (FSA) can be built to recognise whether an English word is singular or plural.  By traversing states for each character (e.g., **b‑o‑y‑s**",
+      "end": "e word belongs to the defined vocabulary, and this recognition runs in linear time with respect to the word length【P22】."
+     },
+     {
+      "reason": "no citation",
+      "text": "Regular nouns follow a common path in the automaton: from a start state (Q₀) to an intermediate state (Q₁) for the singular form, then via a single transition l",
+      "end": "rregular nouns such as *goose → geese* require a separate path because the regular **s** transition does not apply【P19】."
+     },
+     {
+      "reason": "no citation",
+      "text": "Finite‑state recognisers can tell if a string belongs to the language, but they cannot return the lemma (root form) of a word.  For example, the DFA can confirm",
+      "end": "e **boy** as its lemma; a transducer is needed for morphological analysis that maps surface forms to lexical forms【P23】."
+     },
+     {
+      "reason": "no citation",
+      "text": "Two‑level morphology introduces an intermediate representation between the lexical form (e.g., *cat + N + PL*) and the surface form (*cats*).  The first level a",
+      "end": "he final character of the stem and the initial character of the affix to produce the correct surface spelling【P25】【P26】."
+     },
+     {
+      "reason": "no citation",
+      "text": "Context‑sensitive spelling rules can be expressed in a concise notation (e.g., “a is converted to b if preceded by c and followed by d”), allowing systematic ha",
+      "end": "llowing systematic handling of changes such as *fox → foxes* or *cat → cats* during the second level of processing【P26】."
+     },
+     {
+      "reason": "no citation",
+      "text": "Morphological toolkits such as the AT‑FSM library and OPENFST implement these finite‑state methods for analysis and generation of English morphology【P29】.",
+      "end": " AT‑FSM library and OPENFST implement these finite‑state methods for analysis and generation of English morphology【P29】."
+     },
+     {
+      "reason": "no citation",
+      "text": "When designing a morphological analyser, two main approaches are distinguished: a linguistic approach that explicitly models linguistic knowledge, and an engine",
+      "end": "e and absorbs spelling‑change rules into the finite‑state machinery, avoiding separate handling of such rules【P29】【P26】."
+     }
+    ],
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "oded, the automaton walks through the input letters and accepts the word in linear time with respect to its length【P22】."
+      },
+      {
+       "reason": "no citation",
+       "end": "【P19】.  Irregular nouns follow a different path that bypasses Q₁, leading directly to Q₂ (e.g., *goose* → *geese*)【P20】."
+      },
+      {
+       "reason": "no citation",
+       "end": "ting the base form, finite‑state **transducers** are needed, which map surface strings to underlying lexical forms【P23】."
+      },
+      {
+       "reason": "no citation",
+       "end": "ing rules (e.g., converting *‑s* to *‑es* after stems ending in *x* or *h*) to produce the final surface form【P25】【P26】."
+      },
+      {
+       "reason": "no citation",
+       "end": "Two main design approaches are used for morphological analysers:"
+      },
+      {
+       "reason": "no citation",
+       "end": " and places all remaining material in the suffix, thereby handling spelling‑change rules within the same framework【P29】."
+      },
+      {
+       "reason": "no citation",
+       "end": "the alternative to the engineering method) focuses on linguistic description of morpheme ordering and interactions【P26】."
+      },
+      {
+       "reason": "no citation",
+       "end": "s such as the AT & FSM library and OPENFST are commonly employed to implement finite‑state morphological analysers【P29】."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Transducers for lexicon and rules, Tokenization",
+   "status": "failed",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "- In a linguistic approach the stem is pre‑defined in the lexicon and affixes are also listed; surface‑level spelling changes are handled by separate rules that",
+      "end": " listed; surface‑level spelling changes are handled by separate rules that specify how the surface form is altered【P27】."
+     },
+     {
+      "reason": "no citation",
+      "text": "- Engineering approaches do not keep distinct spelling‑change rules; instead they seek the smallest stem unit and encode phonetic irregularities directly into t",
+      "end": "rules; instead they seek the smallest stem unit and encode phonetic irregularities directly into the affix endings【P27】."
+     },
+     {
+      "reason": "no citation",
+      "text": "- A finite‑state transducer (FST) extends a finite‑state automaton by labeling each transition with both an input symbol and an output symbol, thereby enabling ",
+      "end": "and an output symbol, thereby enabling character‑by‑character translation from an input string to an output string【P24】."
+     },
+     {
+      "reason": "no citation",
+      "text": "- Using an FST, morphological analysis can map an inflected form such as “men” to its lemma “man” by following the input‑output pairs on the transitions【P24】.",
+      "end": " can map an inflected form such as “men” to its lemma “man” by following the input‑output pairs on the transitions【P24】."
+     },
+     {
+      "reason": "no citation",
+      "text": "- When generating plural forms, the transducer must handle boundary changes (e.g., inserting an “e” before “s” in “fox” → “foxes”), which can be accommodated by",
+      "end": "fox” → “foxes”), which can be accommodated by adding appropriate input‑output mappings at the relevant transitions【P24】."
+     }
+    ],
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "ndled by explicit rules that describe how the underlying forms are altered when they appear in the final word form【P27】."
+      },
+      {
+       "reason": "no citation",
+       "end": "ectly into the affix specifications, allowing the combined form to be generated without additional rule processing【P27】."
+      },
+      {
+       "reason": "no citation",
+       "end": "to map an input string to a different output string, such as converting the surface form “boys” to its lemma “boy”【P24】."
+      },
+      {
+       "reason": "no citation",
+       "end": " input word like “men” and produce its lemma “man” by following the appropriate input‑output mappings on its edges【P24】."
+      },
+      {
+       "reason": "no citation",
+       "end": "(adding “e” before “s”). Various strategies can be employed within the transducer framework to manage such changes【P24】."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Detecting and Correcting Spelling Errors",
+   "status": "failed",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Spelling correction becomes necessary when the input text is noisy and contains misspelled words that can affect downstream analysis【P1】. The task involves iden",
+      "end": "eam analysis【P1】. The task involves identifying the erroneous token and replacing it with the intended correct form【P1】."
+     },
+     {
+      "reason": "no citation",
+      "text": "Two main scenarios are considered:",
+      "end": "Two main scenarios are considered:"
+     },
+     {
+      "reason": "no citation",
+      "text": "- **Isolated word error correction** – the misspelled word is corrected without using any surrounding context【P2】.",
+      "end": "- **Isolated word error correction** – the misspelled word is corrected without using any surrounding context【P2】."
+     },
+     {
+      "reason": "no citation",
+      "text": "- **Context‑dependent correction** – not covered in the given passages, therefore not included here【P2】.",
+      "end": "- **Context‑dependent correction** – not covered in the given passages, therefore not included here【P2】."
+     },
+     {
+      "reason": "no citation",
+      "text": "The basic approach for isolated word correction is to search for candidate words that are “close” to the misspelled token according to a distance metric【P2】. Th",
+      "end": "the misspelled token are treated as potential corrections; if the distance is too large, the candidate is discarded【P2】."
+     },
+     {
+      "reason": "no citation",
+      "text": "**Example workflow** (derived from the description):",
+      "end": "**Example workflow** (derived from the description):"
+     },
+     {
+      "reason": "no citation",
+      "text": "1. Receive the misspelled token, e.g., “behaf” where the intended word is “behalf”【P1】.",
+      "end": "1. Receive the misspelled token, e.g., “behaf” where the intended word is “behalf”【P1】."
+     },
+     {
+      "reason": "no citation",
+      "text": "2. Compute the edit distance between the token and words in a reference vocabulary【P2】.",
+      "end": "2. Compute the edit distance between the token and words in a reference vocabulary【P2】."
+     },
+     {
+      "reason": "no citation",
+      "text": "3. Select words whose distance is minimal (e.g., “behalf” and “behave” are close to “behaf”)【P2】.",
+      "end": "3. Select words whose distance is minimal (e.g., “behalf” and “behave” are close to “behaf”)【P2】."
+     },
+     {
+      "reason": "no citation",
+      "text": "4. Choose the closest candidate as the corrected form, provided the distance is sufficiently small【P2】.",
+      "end": "4. Choose the closest candidate as the corrected form, provided the distance is sufficiently small【P2】."
+     },
+     {
+      "reason": "no citation",
+      "text": "This simple edit‑distance based method forms the foundation for more sophisticated spelling correction algorithms【P1】.",
+      "end": "This simple edit‑distance based method forms the foundation for more sophisticated spelling correction algorithms【P1】."
+     }
+    ],
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "nstream analysis. The task involves identifying the erroneous token and replacing it with the intended correct form【P1】."
+      },
+      {
+       "reason": "no citation",
+       "end": "Two main scenarios are considered:"
+      },
+      {
+       "reason": "no citation",
+       "end": "unding context. For example, correcting the token “behaf” to “behalf” solely based on its similarity to valid words【P2】."
+      },
+      {
+       "reason": "no citation",
+       "end": "in the given passages, but contrasts with the isolated approach where surrounding words would be taken into account【P2】."
+      },
+      {
+       "reason": "no citation",
+       "end": "rs like “behaf” and “behalf”, indicating they are very similar, while assigning larger distances to unrelated words【P2】."
+      },
+      {
+       "reason": "no citation",
+       "end": "d into another. Words with the smallest edit distance to the misspelled token are selected as correction candidates【P2】."
+      },
+      {
+       "reason": "no citation",
+       "end": "1. Receive a misspelled word (e.g., “behaf”)."
+      },
+      {
+       "reason": "no citation",
+       "end": "2. Compute the edit distance between this word and each word in a reference vocabulary."
+      },
+      {
+       "reason": "no citation",
+       "end": "3. Rank the vocabulary words by increasing distance."
+      },
+      {
+       "reason": "no citation",
+       "end": ". Choose the closest word(s) as the correction, discarding candidates whose distance exceeds a predefined threshold【P2】."
+      },
+      {
+       "reason": "no citation",
+       "end": "This approach forms the foundation for more advanced spelling correction techniques."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Minimum Edit Distance",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "The dynamic‑programming recurrence uses previously computed values:",
+      "end": "The dynamic‑programming recurrence uses previously computed values:"
+     },
+     {
+      "reason": "no citation",
+      "text": "* Deletion: D(i‑1,j) + 1",
+      "end": "* Deletion: D(i‑1,j) + 1"
+     },
+     {
+      "reason": "no citation",
+      "text": "* Insertion: D(i,j‑1) + 1",
+      "end": "* Insertion: D(i,j‑1) + 1"
+     },
+     {
+      "reason": "no citation",
+      "text": "* Substitution: D(i‑1,j‑1) + cost, where cost is 0 if the characters match and 1 (or 2) otherwise",
+      "end": "* Substitution: D(i‑1,j‑1) + cost, where cost is 0 if the characters match and 1 (or 2) otherwise"
+     }
+    ],
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [
+      "U+00EF"
+     ],
+     "latex": [
+      "\\(",
+      "\\)",
+      "^{",
+      "\\text",
+      "\\times"
+     ],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "The dynamic‑programming recurrence uses previously computed values:"
+      }
+     ]
+    }
+   },
+   "verify": null
+  }
+ ]
+}

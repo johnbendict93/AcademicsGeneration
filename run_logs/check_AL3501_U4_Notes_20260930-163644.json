@@ -1,0 +1,315 @@
+{
+ "subject_code": "AL3501",
+ "unit": 4,
+ "variant": "Notes",
+ "source_sha256": "1c1c6445dcf84e45b8c8d4cbbf7490b2d2feffe4c46e4ea8ea826e2a3b88e65e",
+ "prompt_version": "sp:895212a2a3+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 18,
+ "needs_review": [],
+ "failed": [
+  "First-Order Logic",
+  "selectional restrictions"
+ ],
+ "skipped_spots": [],
+ "topics": [
+  {
+   "topic": "Requirements for representation",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "POS"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "First-Order Logic",
+   "status": "failed",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [],
+    "layout": [
+     "empty section removed: Definition",
+     "empty section removed: Explanation",
+     "empty section removed: Example",
+     "empty section removed: Algorithm / Steps",
+     "empty section removed: Key points"
+    ],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Syntax-Driven Semantic analysis",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Semantic attachments",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 2,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Word Senses",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [
+     "1. Build a co‑occurrence graph for the target word using a corpus."
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Relations between Senses",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "WordNet"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "selectional restrictions",
+   "status": "failed",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Word Sense Disambiguation",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "WSD",
+     "Build",
+     "Train"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "WSD using Supervised",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "WordNet"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Dictionary & Thesaurus",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Bootstrapping methods",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Word Similarity using Thesaurus and Distributional methods.",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [
+     "WordNet"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 2,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [
+      "U+2081",
+      "U+2082"
+     ],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:d69297909e+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 3,
+ "needs_review": [],
+ "failed": [],
+ "skipped_spots": [
+  "Garbled NPTEL transcript: says the transducer outputs lemma 'men' for input 'men' (lecture slide: 'man'). Printed as a wrong fact in runs #6, #9, #10, #11.",
+  "Garbled NPTEL transcript: 'Catherine cook k notation' is not a real name for the rewrite-rule notation. Printed as 'Catherine-Cook notation' in run #12."
+ ],
+ "topics": [
+  {
+   "topic": "Minimum Edit Distance",
+   "status": "ok",
+   "writer": {
+    "calls": 3,
+    "new_terms": [
+     "DP"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "2. For each cell (i,j) compute:",
+      "end": "2. For each cell (i,j) compute:"
+     }
+    ],
+    "kept_leadins": [
+     "To convert **intention** to **execution** the following operations were performed:"
+    ],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "used_try": 2,
+    "reask_reason": "not ok, then lost lines",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [
+      "\\(",
+      "_{",
+      "\\)",
+      "\\times"
+     ],
+     "dropped": [
+      {
+       "reason": "heading not allowed",
+       "end": "#### Definition - what it is"
+      },
+      {
+       "reason": "heading not allowed",
+       "end": "#### Explanation - how or why it works"
+      },
+      {
+       "reason": "heading not allowed",
+       "end": "#### Example - only a concrete example that is in the passages"
+      },
+      {
+       "reason": "heading not allowed",
+       "end": "#### Algorithm / Steps - numbered steps, procedure or formula lines, only if the passages give them"
+      },
+      {
+       "reason": "no citation",
+       "end": "1. Initialise a matrix \\(D\\) of size \\((n+1) \\times (m+1)\\)."
+      },
+      {
+       "reason": "no citation",
+       "end": "2. Set \\(D_{0,j}=j\\) (cost of inserting \\(j\\) characters) and \\(D_{i,0}=i\\) (cost of deleting \\(i\\) characters)."
+      },
+      {
+       "reason": "no citation",
+       "end": "3. For each \\(i = 1 \\dots n\\) and each \\(j = 1 \\dots m\\):"
+      },
+      {
+       "reason": "no citation",
+       "end": "   - Compute cost of deletion: \\(D_{i-1,j}+1\\)."
+      },
+      {
+       "reason": "no citation",
+       "end": "   - Compute cost of insertion: \\(D_{i,j-1}+1\\)."
+      },
+      {
+       "reason": "no citation",
+       "end": "cost of substitution: \\(D_{i-1,j-1}+c\\), where \\(c=0\\) if \\(X_i = Y_j\\) else \\(c=1\\) (or 2 if substitution is weighted)."
+      },
+      {
+       "reason": "no citation",
+       "end": "4. The edit distance between the full strings is \\(D_{n,m}\\)."
+      }
+     ]
+    }
+   },
+   "verify": null
+  }
+ ]
+}

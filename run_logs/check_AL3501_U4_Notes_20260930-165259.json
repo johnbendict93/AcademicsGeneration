@@ -1,0 +1,39 @@
+{
+ "subject_code": "AL3501",
+ "unit": 4,
+ "variant": "Notes",
+ "source_sha256": "1c1c6445dcf84e45b8c8d4cbbf7490b2d2feffe4c46e4ea8ea826e2a3b88e65e",
+ "prompt_version": "sp:895212a2a3+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 3,
+ "needs_review": [],
+ "failed": [
+  "selectional restrictions"
+ ],
+ "skipped_spots": [],
+ "topics": [
+  {
+   "topic": "selectional restrictions",
+   "status": "failed",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  }
+ ]
+}

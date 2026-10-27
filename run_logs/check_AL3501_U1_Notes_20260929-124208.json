@@ -1,0 +1,185 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:9da371e881+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 11,
+ "needs_review": [],
+ "failed": [],
+ "skipped_spots": [
+  "Garbled NPTEL transcript: says the transducer outputs lemma 'men' for input 'men' (lecture slide: 'man'). Printed as a wrong fact in runs #6, #9, #10, #11.",
+  "Garbled NPTEL transcript: 'Catherine cook k notation' is not a real name for the rewrite-rule notation. Printed as 'Catherine-Cook notation' in run #12."
+ ],
+ "topics": [
+  {
+   "topic": "Language Modeling: Grammar-based LM, Statistical LM",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Regular Expressions",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Finite-State Automata",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [
+     "Key properties of FSAs:"
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "English Morphology",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Transducers for lexicon and rules, Tokenization",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "used_try": 2,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "cter sequences to token boundaries, preparing the text for subsequent morphological analysis and part‑of‑speech tagging."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Detecting and Correcting Spelling Errors",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [
+     "Levenshtein"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "This approach forms the foundation for more advanced spelling correction methods that may incorporate contextual information or probabilistic models.",
+      "end": "ation for more advanced spelling correction methods that may incorporate contextual information or probabilistic models."
+     }
+    ],
+    "kept_leadins": [
+     "In practice, the correction process proceeds as follows:"
+    ],
+    "used_try": 1,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [
+      "Levenshtein"
+     ],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "ation for more advanced spelling correction methods that may incorporate contextual information or probabilistic models."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Minimum Edit Distance",
+   "status": "ok",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Dynamic programming computes D(i,j) using previously computed smaller sub‑problems. For a deletion we move from D(i‑1,j) to D(i,j) and add the deletion cost, ty",
+      "end": "ly computed smaller sub‑problems. For a deletion we move from D(i‑1,j) to D(i,j) and add the deletion cost, typically 1:"
+     },
+     {
+      "reason": "no citation",
+      "text": "For an insertion we move from D(i,j‑1) and add the insertion cost:",
+      "end": "For an insertion we move from D(i,j‑1) and add the insertion cost:"
+     },
+     {
+      "reason": "no citation",
+      "text": "For a substitution (or match) we move from D(i‑1,j‑1) and add 0 if the characters match or the substitution cost otherwise:",
+      "end": " a substitution (or match) we move from D(i‑1,j‑1) and add 0 if the characters match or the substitution cost otherwise:"
+     }
+    ],
+    "kept_leadins": [],
+    "used_try": 2,
+    "reask_reason": "not ok, then lost lines",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [
+      "\\(",
+      "\\)",
+      "\\times",
+      "\\text"
+     ],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "- \\(D(i-1,j) + 1\\) for a deletion,"
+      },
+      {
+       "reason": "no citation",
+       "end": "- \\(D(i,j-1) + 1\\) for an insertion,"
+      }
+     ]
+    }
+   },
+   "verify": null
+  }
+ ]
+}

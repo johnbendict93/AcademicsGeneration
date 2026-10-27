@@ -1,0 +1,15 @@
+# Streamlit local secrets (CRITICAL to keep API keys & DB URLs safe)
+.streamlit/secrets.toml
+
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local environment variables
+.env
+
+# OS-specific metadata files
+.DS_Store
+Thumbs.db

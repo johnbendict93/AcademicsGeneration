@@ -1,0 +1,351 @@
+{
+ "subject_code": "AL3501",
+ "unit": 3,
+ "variant": "Notes",
+ "source_sha256": "2b21ebdbff94dc4dcd0b054efcf67effd5fba8f7f0abf255f265a00293c27c2e",
+ "prompt_version": "sp:895212a2a3+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 23,
+ "needs_review": [],
+ "failed": [
+  "Shallow parsing",
+  "Feature structures",
+  "Unification of feature structures."
+ ],
+ "skipped_spots": [],
+ "topics": [
+  {
+   "topic": "Normal Forms for grammar",
+   "status": "ok",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [
+      "\\(",
+      "_{",
+      "\\)",
+      "\\dots",
+      "\\rightarrow"
+     ],
+     "dropped": []
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Dependency Grammar",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "These constraints ensure that the dependency tree is well‑formed and can be parsed algorithmically.",
+      "end": "These constraints ensure that the dependency tree is well‑formed and can be parsed algorithmically."
+     }
+    ],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 1,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "These constraints ensure that the dependency tree is well‑formed and can be parsed algorithmically."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Syntactic Parsing, Ambiguity",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "MST"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "DynamicProgramming parsing",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [
+     "1.0"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "For the sentence “astronomers saw …”, the PCFG provides rule probabilities such as",
+      "end": "For the sentence “astronomers saw …”, the PCFG provides rule probabilities such as"
+     },
+     {
+      "reason": "no citation",
+      "text": "- NP → astronomers : 0.1",
+      "end": "- NP → astronomers : 0.1"
+     },
+     {
+      "reason": "no citation",
+      "text": "- VP → V NP : 0.7",
+      "end": "- VP → V NP : 0.7"
+     },
+     {
+      "reason": "no citation",
+      "text": "- V → saw : 1.0",
+      "end": "- V → saw : 1.0"
+     }
+    ],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [
+     "steps incomplete: Example lost 3 of 3 items"
+    ],
+    "list_tagged": [],
+    "used_try": 1,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [
+      "1.0"
+     ],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "For the sentence “astronomers saw …”, the PCFG provides rule probabilities such as"
+      },
+      {
+       "reason": "no citation",
+       "end": "- NP → astronomers : 0.1"
+      },
+      {
+       "reason": "no citation",
+       "end": "- VP → V NP : 0.7"
+      },
+      {
+       "reason": "no citation",
+       "end": "- V → saw : 1.0"
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Shallow parsing",
+   "status": "failed",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "*Shallow parsing* is not described in the provided passages, so no definition can be given."
+      },
+      {
+       "reason": "no citation",
+       "end": "No explanation of shallow parsing appears in the source material."
+      },
+      {
+       "reason": "no citation",
+       "end": "No example of shallow parsing is present in the passages."
+      },
+      {
+       "reason": "no citation",
+       "end": "The passages do not contain any algorithm or step‑by‑step procedure for shallow parsing."
+      },
+      {
+       "reason": "no citation",
+       "end": "* The source material does not cover shallow parsing, therefore no key points can be listed."
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Probabilistic CFG",
+   "status": "ok",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [
+      "\\(",
+      "\\times",
+      "^{",
+      "\\)"
+     ],
+     "dropped": []
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Probabilistic CYK,Probabilistic Lexicalized CFGs",
+   "status": "ok",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [
+      "\\(",
+      "\\times",
+      "^{",
+      "\\)"
+     ],
+     "dropped": []
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Feature structures",
+   "status": "failed",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Unification of feature structures.",
+   "status": "failed",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": []
+    }
+   },
+   "verify": null
+  }
+ ]
+}

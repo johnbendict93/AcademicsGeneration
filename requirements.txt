@@ -1,0 +1,9 @@
+# AcademicsGen app (runs locally via run_app.bat). All free / open-source.
+streamlit
+psycopg2-binary
+requests
+reportlab
+markdown-it-py
+# tests only
+pytest
+pypdf

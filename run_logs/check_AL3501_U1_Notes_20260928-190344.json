@@ -1,0 +1,182 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:c61d055f86+sq:a3295f6988",
+ "calls": 8,
+ "needs_review": [],
+ "failed": [],
+ "topics": [
+  {
+   "topic": "Origins and challenges of NLP",
+   "status": "gap",
+   "writer": null,
+   "verify": null
+  },
+  {
+   "topic": "Language Modeling: Grammar-based LM, Statistical LM",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "POS"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Regular Expressions",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Thus, regular expressions provide the formal basis for constructing finite state automata that serve as language recognisers and generators in natural language ",
+      "end": "for constructing finite state automata that serve as language recognisers and generators in natural language processing."
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Finite-State Automata",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Key properties of FSAs include:",
+      "end": "Key properties of FSAs include:"
+     },
+     {
+      "reason": "no citation",
+      "text": "These characteristics make FSAs a fundamental tool for computational morphology and other NLP tasks.",
+      "end": "These characteristics make FSAs a fundamental tool for computational morphology and other NLP tasks."
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "English Morphology",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [
+      "U+2080",
+      "U+2081",
+      "U+2082"
+     ],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "Two main design approaches are used for morphological analysis:"
+      }
+     ]
+    }
+   },
+   "verify": null
+  },
+  {
+   "topic": "Transducers for lexicon and rules, Tokenization",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "FST"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Detecting and Correcting Spelling Errors",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "Levenshtein"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Two main scenarios are considered:",
+      "end": "Two main scenarios are considered:"
+     },
+     {
+      "reason": "no citation",
+      "text": "- **Context‑dependent correction** – not covered in the given passages.",
+      "end": "- **Context‑dependent correction** – not covered in the given passages."
+     },
+     {
+      "reason": "no citation",
+      "text": "The correction algorithm therefore proceeds as follows:",
+      "end": "The correction algorithm therefore proceeds as follows:"
+     },
+     {
+      "reason": "no citation",
+      "text": "- Given a misspelled word (e.g., “behaf”), compute its edit distance to words in a dictionary.",
+      "end": "- Given a misspelled word (e.g., “behaf”), compute its edit distance to words in a dictionary."
+     },
+     {
+      "reason": "no citation",
+      "text": "- Select the dictionary word(s) with the smallest distance as possible corrections.",
+      "end": "- Select the dictionary word(s) with the smallest distance as possible corrections."
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Minimum Edit Distance",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "To compute the distance efficiently we define a matrix D where D[i][j] represents the edit distance between the first i characters of the source string X and th",
+      "end": " and the first j characters of the target string Y. The value D[i][j] is obtained from three possible predecessor cells:"
+     },
+     {
+      "reason": "no citation",
+      "text": "- Deletion: D[i‑1][j] + 1",
+      "end": "- Deletion: D[i‑1][j] + 1"
+     },
+     {
+      "reason": "no citation",
+      "text": "- Insertion: D[i][j‑1] + 1",
+      "end": "- Insertion: D[i][j‑1] + 1"
+     }
+    ]
+   },
+   "verify": null
+  }
+ ]
+}

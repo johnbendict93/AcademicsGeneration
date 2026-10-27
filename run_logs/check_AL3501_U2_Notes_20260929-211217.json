@@ -1,0 +1,67 @@
+{
+ "subject_code": "AL3501",
+ "unit": 2,
+ "variant": "Notes",
+ "source_sha256": "31bf0c104f4be943590c0e291e04eb5e8d458f01fd561f11c8e423f91db27148",
+ "prompt_version": "sp:895212a2a3+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 3,
+ "needs_review": [
+  "Hidden Markov and Maximum Entropy models."
+ ],
+ "failed": [],
+ "skipped_spots": [],
+ "topics": [
+  {
+   "topic": "Hidden Markov and Maximum Entropy models.",
+   "status": "needs_review",
+   "writer": {
+    "calls": 3,
+    "new_terms": [],
+    "odd_chars": [
+     "U+03BB",
+     "U+03A3"
+    ],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 3,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [
+      "MaxEnt",
+      "POS",
+      "Generalized",
+      "Iterative",
+      "Scaling"
+     ],
+     "odd_chars": [
+      "U+03BB",
+      "U+1D62",
+      "U+03A3"
+     ],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "2. Initialize weights λᵢ (often to zero)."
+      },
+      {
+       "reason": "no citation",
+       "end": "4. Compute the conditional probability for each tag y given an observation x using"
+      }
+     ]
+    }
+   },
+   "verify": null
+  }
+ ]
+}

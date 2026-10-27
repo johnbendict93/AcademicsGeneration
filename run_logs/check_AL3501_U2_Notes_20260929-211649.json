@@ -1,0 +1,56 @@
+{
+ "subject_code": "AL3501",
+ "unit": 2,
+ "variant": "Notes",
+ "source_sha256": "31bf0c104f4be943590c0e291e04eb5e8d458f01fd561f11c8e423f91db27148",
+ "prompt_version": "sp:895212a2a3+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 2,
+ "needs_review": [],
+ "failed": [],
+ "skipped_spots": [],
+ "topics": [
+  {
+   "topic": "Hidden Markov and Maximum Entropy models.",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": [],
+    "used_try": 2,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [
+      "MaxEnt",
+      "POS"
+     ],
+     "odd_chars": [
+      "U+1D62",
+      "U+03BB",
+      "U+03A3"
+     ],
+     "latex": [
+      "_{"
+     ],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "2. Assign a weight λᵢ to each feature; these weights will be learned from training data."
+      }
+     ]
+    }
+   },
+   "verify": null
+  }
+ ]
+}

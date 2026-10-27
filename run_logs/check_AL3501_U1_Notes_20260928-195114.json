@@ -1,0 +1,159 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:a9ee9aab4d+sq:a3295f6988",
+ "calls": 8,
+ "needs_review": [
+  "Minimum Edit Distance"
+ ],
+ "failed": [],
+ "topics": [
+  {
+   "topic": "Origins and challenges of NLP",
+   "status": "gap",
+   "writer": null,
+   "verify": null
+  },
+  {
+   "topic": "Language Modeling: Grammar-based LM, Statistical LM",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Regular Expressions",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Finite-State Automata",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [
+     "Key properties of FSAs include:"
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "English Morphology",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Transducers for lexicon and rules, Tokenization",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "FST"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Detecting and Correcting Spelling Errors",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "Levenshtein"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [
+     "Thus, spelling correction for isolated words relies on:"
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Minimum Edit Distance",
+   "status": "needs_review",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [
+     "U+00B7"
+    ],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "The dynamic‑programming recurrence uses previously computed values:",
+      "end": "The dynamic‑programming recurrence uses previously computed values:"
+     },
+     {
+      "reason": "no citation",
+      "text": "- Deleting the i‑th character of X gives a cost of D(i‑1,j) + 1.",
+      "end": "- Deleting the i‑th character of X gives a cost of D(i‑1,j) + 1."
+     },
+     {
+      "reason": "no citation",
+      "text": "- Inserting the j‑th character of Y gives a cost of D(i,j‑1) + 1.",
+      "end": "- Inserting the j‑th character of Y gives a cost of D(i,j‑1) + 1."
+     },
+     {
+      "reason": "no citation",
+      "text": "This dynamic‑programming approach efficiently finds the minimum edit distance and, with back‑tracing, also provides the optimal alignment between the two string",
+      "end": "tly finds the minimum edit distance and, with back‑tracing, also provides the optimal alignment between the two strings."
+     }
+    ],
+    "kept_leadins": [],
+    "used_try": 2,
+    "reask_reason": "not ok",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [
+      "\\(",
+      "\\)",
+      "\\times"
+     ],
+     "dropped": [
+      {
+       "reason": "no citation",
+       "end": "Dynamic programming computes \\(D(i,j)\\) using previously solved sub‑problems:"
+      }
+     ]
+    }
+   },
+   "verify": null
+  }
+ ]
+}

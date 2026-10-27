@@ -1,0 +1,209 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:b281cfdf74+sq:a3295f6988",
+ "calls": 13,
+ "needs_review": [
+  "English Morphology",
+  "Detecting and Correcting Spelling Errors"
+ ],
+ "failed": [
+  "Language Modeling: Grammar-based LM, Statistical LM",
+  "Regular Expressions",
+  "Finite-State Automata"
+ ],
+ "topics": [
+  {
+   "topic": "Origins and challenges of NLP",
+   "status": "gap",
+   "writer": null,
+   "verify": null
+  },
+  {
+   "topic": "Language Modeling: Grammar-based LM, Statistical LM",
+   "status": "failed",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "- Grammar‑based models rely on explicit rules that capture local syntactic constraints, such as “a determiner is always followed by an adjective or a noun” and "
+     },
+     {
+      "reason": "no citation",
+      "text": "- These rules are typically written in an *if‑then‑else* form after analysing the language to discover symbol patterns that must hold for a given task【P39】."
+     },
+     {
+      "reason": "no citation",
+      "text": "- Statistical models learn from a tagged training corpus. The corpus provides sentences together with the correct part‑of‑speech (POS) tag for each word, allowi"
+     },
+     {
+      "reason": "no citation",
+      "text": "- One early statistical approach is the Transformation‑Based Learning (TBL) tagger, which first assigns the most likely tag to each word and then learns transfo"
+     },
+     {
+      "reason": "no citation",
+      "text": "- Probabilistic taggers go further by computing the most likely sequence of tags for an entire sentence, using probabilities derived from the training corpus【P4"
+     },
+     {
+      "reason": "no citation",
+      "text": "- In practice, a rule‑based solution may be applied first to capture deterministic constraints (e.g., determiners followed by adjectives), and a statistical com"
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Regular Expressions",
+   "status": "failed",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Regular expressions define regular languages, and every regular expression can be transformed into a finite‑state automaton that recognizes the same language【P1"
+     },
+     {
+      "reason": "no citation",
+      "text": "A finite‑state automaton is a directed graph whose nodes are called states and whose labeled edges represent possible symbol transitions. One state is designate"
+     },
+     {
+      "reason": "no citation",
+      "text": "When an input string is processed, the automaton follows the edges that match the successive characters. If the traversal ends in an accepting state, the string"
+     },
+     {
+      "reason": "no citation",
+      "text": "Finite‑state automata therefore serve as language recognizers for the regular languages specified by regular expressions【P17】."
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Finite-State Automata",
+   "status": "failed",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "A finite‑state automaton (FSA) is a directed graph whose nodes are called **states** and whose edges are labeled with symbols from an alphabet. One state is des"
+     },
+     {
+      "reason": "no citation",
+      "text": "When an input such as **color** is fed to an FSA, the machine begins at the start state, follows the edge labeled ‘c’ to the next state, then ‘o’, ‘l’, ‘o’, ‘r’"
+     },
+     {
+      "reason": "no citation",
+      "text": "FSAs recognize exactly the **regular languages** that can be described by regular expressions; any regular expression can be converted into an equivalent automa"
+     },
+     {
+      "reason": "no citation",
+      "text": "In morphological analysis, FSAs model regular concatenation at morpheme boundaries. For example, a single transition labeled **s** can attach the plural suffix "
+     },
+     {
+      "reason": "no citation",
+      "text": "FSAs can also encode adjective formation: a prefix such as **un‑** leads from the start state to a state where the root adjective is processed, and subsequent s"
+     },
+     {
+      "reason": "no citation",
+      "text": "Overall, FSAs provide an elegant, linear‑time mechanism for recognizing and generating word forms based on regular morphological patterns【P22】."
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "English Morphology",
+   "status": "needs_review",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [
+     "U+2080",
+     "U+2081",
+     "U+2082"
+    ],
+    "latex": [],
+    "dropped": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Transducers for lexicon and rules, Tokenization",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "FST"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Detecting and Correcting Spelling Errors",
+   "status": "needs_review",
+   "writer": {
+    "calls": 2,
+    "new_terms": [
+     "Levenshtein",
+     "1",
+     "2",
+     "3"
+    ],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Two scenarios are considered:"
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Minimum Edit Distance",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "The dynamic‑programming recurrence uses three previously computed values:"
+     },
+     {
+      "reason": "no citation",
+      "text": "* Deletion: D(i‑1, j) + 1 – delete the *i*‑th character of X."
+     },
+     {
+      "reason": "no citation",
+      "text": "* Insertion: D(i, j‑1) + 1 – insert the *j*‑th character of Y."
+     },
+     {
+      "reason": "no citation",
+      "text": "* Substitution (or match): D(i‑1, j‑1) + cost, where cost is 0 if the two characters are identical and 1 (or 2 in the variant) otherwise."
+     }
+    ]
+   },
+   "verify": null
+  }
+ ]
+}

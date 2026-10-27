@@ -1,0 +1,160 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:a7ab2ea220+sq:7117414ada",
+ "calls": 8,
+ "needs_review": [],
+ "failed": [
+  "English Morphology"
+ ],
+ "topics": [
+  {
+   "topic": "Origins and challenges of NLP",
+   "status": "gap",
+   "writer": null,
+   "verify": null
+  },
+  {
+   "topic": "Language Modeling: Grammar-based LM, Statistical LM",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [
+     "POS"
+    ],
+    "odd_chars": [],
+    "dropped": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Regular Expressions",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "dropped": []
+   },
+   "verify": null
+  },
+  {
+   "topic": "Finite-State Automata",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Key properties of FSAs:"
+     },
+     {
+      "reason": "no citation",
+      "text": "These characteristics make FSAs a practical tool for computational morphology and related NLP tasks."
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "English Morphology",
+   "status": "failed",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Finite‑state automata (FSA) can be built to recognise whether an English word is singular or plural.  After enumerating the vocabulary, the automaton follows tr"
+     },
+     {
+      "reason": "no citation",
+      "text": "Regular nouns are handled by a single transition that adds the plural morpheme **‑s**.  All singular nouns converge to a common state, and an edge labelled **s*"
+     },
+     {
+      "reason": "no citation",
+      "text": "Irregular nouns require separate paths in the automaton.  For example, the singular **goose** does not follow the regular **‑s** transition; a distinct route is"
+     },
+     {
+      "reason": "no citation",
+      "text": "Pure FSAs are recognisers or generators; they cannot return the lemma (root form) of a word.  To obtain the base form (e.g., **boy** from **boys**) a transducer"
+     },
+     {
+      "reason": "no citation",
+      "text": "Two‑level morphology introduces an intermediate representation between the lexical form and the surface form.  The first level attaches a placeholder (e.g., **c"
+     },
+     {
+      "reason": "no citation",
+      "text": "The engineering approach treats the stem (e.g., the consonant **k**) as the core and places all other elements into the suffix, allowing spelling‑change rules t"
+     },
+     {
+      "reason": "no citation",
+      "text": "In summary, English morphology can be modelled with finite‑state methods: regular pluralisation uses a shared transition, irregular forms need dedicated paths, "
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Transducers for lexicon and rules, Tokenization",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Tokenization is not detailed in the source material, so only a brief mention is possible."
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Detecting and Correcting Spelling Errors",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Two main scenarios are considered:"
+     },
+     {
+      "reason": "no citation",
+      "text": "- **Context‑based correction** – not described in the given passages, so it is omitted."
+     },
+     {
+      "reason": "no citation",
+      "text": "The algorithm proceeds as follows:"
+     }
+    ]
+   },
+   "verify": null
+  },
+  {
+   "topic": "Minimum Edit Distance",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "The dynamic‑programming recurrence computes \\(D(i,j)\\) from previously computed sub‑problems:"
+     }
+    ]
+   },
+   "verify": null
+  }
+ ]
+}

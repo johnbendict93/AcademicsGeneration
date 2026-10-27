@@ -1,0 +1,38 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:895212a2a3+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 1,
+ "needs_review": [],
+ "failed": [],
+ "skipped_spots": [
+  "Garbled NPTEL transcript: says the transducer outputs lemma 'men' for input 'men' (lecture slide: 'man'). Printed as a wrong fact in runs #6, #9, #10, #11.",
+  "Garbled NPTEL transcript: 'Catherine cook k notation' is not a real name for the rewrite-rule notation. Printed as 'Catherine-Cook notation' in run #12."
+ ],
+ "topics": [
+  {
+   "topic": "Finite-State Automata",
+   "status": "ok",
+   "writer": {
+    "calls": 1,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "list_tagged": []
+   },
+   "verify": null
+  }
+ ]
+}

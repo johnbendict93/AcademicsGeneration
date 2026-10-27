@@ -1,0 +1,96 @@
+{
+ "subject_code": "AL3501",
+ "unit": 1,
+ "variant": "Notes",
+ "source_sha256": "f034c46d67adb38e092d690a47e14e8958c537cef1d33be35b9b97a1ef09af91",
+ "prompt_version": "sp:d69297909e+sq:a3295f6988+gs:84ed3a701a",
+ "calls": 2,
+ "needs_review": [],
+ "failed": [],
+ "skipped_spots": [
+  "Garbled NPTEL transcript: says the transducer outputs lemma 'men' for input 'men' (lecture slide: 'man'). Printed as a wrong fact in runs #6, #9, #10, #11.",
+  "Garbled NPTEL transcript: 'Catherine cook k notation' is not a real name for the rewrite-rule notation. Printed as 'Catherine-Cook notation' in run #12."
+ ],
+ "topics": [
+  {
+   "topic": "Finite-State Automata",
+   "status": "ok",
+   "writer": {
+    "calls": 2,
+    "new_terms": [],
+    "odd_chars": [],
+    "latex": [],
+    "dropped": [
+     {
+      "reason": "no citation",
+      "text": "Consider the automaton with six states (0–6) where state 0 is the start state and state 6 is accepting.",
+      "end": "Consider the automaton with six states (0–6) where state 0 is the start state and state 6 is accepting."
+     },
+     {
+      "reason": "no citation",
+      "text": "1. Begin at the start state.",
+      "end": "1. Begin at the start state."
+     },
+     {
+      "reason": "no citation",
+      "text": "2. Read the next input symbol.",
+      "end": "2. Read the next input symbol."
+     },
+     {
+      "reason": "no citation",
+      "text": "3. Follow the edge labeled with that symbol from the current state.",
+      "end": "3. Follow the edge labeled with that symbol from the current state."
+     },
+     {
+      "reason": "no citation",
+      "text": "4. Repeat steps 2–3 until all symbols are consumed.",
+      "end": "4. Repeat steps 2–3 until all symbols are consumed."
+     }
+    ],
+    "kept_leadins": [],
+    "sections": [
+     "Definition",
+     "Explanation",
+     "Example",
+     "Algorithm / Steps",
+     "Key points"
+    ],
+    "layout": [],
+    "used_try": 2,
+    "reask_reason": "lost lines",
+    "first_try": {
+     "new_terms": [],
+     "odd_chars": [],
+     "latex": [],
+     "dropped": [
+      {
+       "reason": "heading not allowed",
+       "end": "#### Definition - what it is"
+      },
+      {
+       "reason": "heading not allowed",
+       "end": "#### Explanation - how or why it works"
+      },
+      {
+       "reason": "heading not allowed",
+       "end": "#### Example - only a concrete example that is in the passages"
+      },
+      {
+       "reason": "no citation",
+       "end": "Consider the automaton shown in the lecture (six states, start state 0, accepting state 6)."
+      },
+      {
+       "reason": "no citation",
+       "end": " **color**: start at state 0, read ‘c’ → state 1, ‘o’ → state 2, ‘l’ → state 3, ‘o’ → state 4, ‘r’ → state 6 → accepted."
+      },
+      {
+       "reason": "no citation",
+       "end": "- Input **colour**: follows a path 0→1→2→3→4→5→6 and is also accepted."
+      }
+     ]
+    }
+   },
+   "verify": null
+  }
+ ]
+}
