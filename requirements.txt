@@ -8,3 +8,4 @@ markdown-it-py
 pytest
 pypdf
 beautifulsoup4
+snowballstemmer
