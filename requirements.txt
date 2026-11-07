@@ -9,4 +9,3 @@ pytest
 pypdf
 beautifulsoup4
 snowballstemmer
-keep_awake
