@@ -3,7 +3,7 @@
 Offline and pure: reads subjects.json + one verified unit file, writes nothing,
 no network, no Groq, no DB.
 
-  load_unit_source(code, unit)   -> UnitSource  (R1 live file only, R2 sha check, R3 refuse)
+  load_unit_source(code, unit)    -> UnitSource  (R1 live file only, R2 sha check, R3 refuse)
   split_passages(text)           -> [Passage]   (~300 words, P1, P2, ...)
   build_unit_context(code, unit) -> UnitContext (per-sub-topic passages + gap list, R4)
 
@@ -21,9 +21,10 @@ import os
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
+import requests
 
 _APP_DIR = Path(__file__).resolve().parent
-_DOCS_DIR = _APP_DIR.parent.parent        # ...\Documents (App lives in Documents\AcademicsGen\App)
+_DOCS_DIR = _APP_DIR.parent.parent      # ...\Documents (App lives in Documents\AcademicsGen\App)
 
 SCRIPTS_DIR = Path(os.environ.get(
     "ACADEMICSGEN_SCRIPTS_DIR",
@@ -85,7 +86,7 @@ class UnitSource:
     license: str
     word_count: int
     meta: dict = field(repr=False)
-    skipped_spots: list = field(default_factory=list)     # BL-035: reasons of garbled spots removed
+    skipped_spots: list = field(default_factory=list)    # BL-035: reasons of garbled spots removed
 
 
 @dataclass
@@ -101,7 +102,7 @@ class TopicPlan:
     status: str
     match_ratio: float
     passages: list
-    trimmed: list = field(default_factory=list)     # BL-039: passage ids left out to fit the budget
+    trimmed: list = field(default_factory=list)    # BL-039: passage ids left out to fit the budget
 
 
 @dataclass
@@ -166,17 +167,31 @@ def load_unit_source(code, unit, resources_dir=None) -> UnitSource:
 
     path = _safe_unit_file(resources_dir, code, meta.get("file"))
     if not path.is_file():
-        raise SourceRefused(f"{code} Unit {u}: source file missing ({meta.get('file')})")
-    raw = path.read_bytes()
+        # Fallback for Streamlit Cloud: fetch raw source from public GitHub data repo
+        rel = meta.get("file")
+        raw_url = f"https://raw.githubusercontent.com/johnbendict93/Anna-University-PDF-Academic-Resources/main/sources/{rel}"
+        try:
+            resp = requests.get(raw_url, timeout=15)
+            if resp.status_code == 200:
+                raw = resp.content
+            else:
+                raise SourceRefused(f"{code} Unit {u}: source file missing locally and GitHub fetch failed (HTTP {resp.status_code})")
+        except Exception as e:
+            if isinstance(e, SourceRefused):
+                raise
+            raise SourceRefused(f"{code} Unit {u}: source file missing ({meta.get('file')}) and GitHub fetch error: {e}")
+    else:
+        raw = path.read_bytes()
+
     got = hashlib.sha256(raw).hexdigest()
     if got != want:
         raise SourceRefused(f"{code} Unit {u}: sha256 mismatch - file changed since it was verified "
                             f"(want {want[:10]}, got {got[:10]})")
     text = raw.decode("utf-8")
     return UnitSource(code=code, unit=u, path=path, text=text, sha256=got,
-                      source=meta.get("source", ""), url=meta.get("url", ""),
-                      title=meta.get("title", ""), license=meta.get("license", ""),
-                      word_count=len(text.split()), meta=dict(meta))
+                    source=meta.get("source", ""), url=meta.get("url", ""),
+                    title=meta.get("title", ""), license=meta.get("license", ""),
+                    word_count=len(text.split()), meta=dict(meta))
 
 
 def split_passages(text: str) -> list:
